@@ -41,7 +41,7 @@
 
 /* Mempers */
 .w3l-team .column a img {
-  height: 220px;
+  height: 290px;
   object-fit: cover;
 }
 .w3l-team h3.name-pos a {
@@ -50,4 +50,17 @@
 .w3l-team .column-btm {
   height: 200px;
   margin-bottom: 20px;
+}
+.w3l-ab-features .features-w3pvt-main .featured_grid_right_info {
+  margin-bottom: 1.2em;
+}
+.w3l-ab-features .features-w3pvt-main h4 a {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.w3l-ab-features .features-w3pvt-main span.fa {
+  font-size: 1.6em;
+}
+.commeties .w3l-team .column-btm {
+  height: 120px;
 }
