@@ -42,7 +42,7 @@
 /* Mempers */
 .w3l-team .column a img {
   height: 290px;
-  object-fit: cover;
+  object-fit: fill;
 }
 .w3l-team h3.name-pos a {
   font-size: 18px;
@@ -63,4 +63,11 @@
 }
 .commeties .w3l-team .column-btm {
   height: 120px;
+}
+
+/* sponsers */
+.sponsers img {
+  border: 4px double #d7d6d6ab;
+  padding: 16px;
+  background: #ffffff;
 }
