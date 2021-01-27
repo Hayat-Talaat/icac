@@ -71,3 +71,8 @@
   padding: 16px;
   background: #ffffff;
 }
+
+/* Partners */
+.w3l-team.partners .column-btm {
+  height: auto;
+}
