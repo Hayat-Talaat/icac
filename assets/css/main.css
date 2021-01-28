@@ -76,3 +76,8 @@
 .w3l-team.partners .column-btm {
   height: auto;
 }
+
+.galler-top img {
+  height: 250px;
+  width: 100%;
+}
