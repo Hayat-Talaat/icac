@@ -109,7 +109,7 @@
       </div>
   </section>
 
-    <!--/contact-->
+    <!-- Registeration Form -->
     <section class="w3l-contact-11 py-5">
 
       <div class="contacts-main py-lg-5 py-md-4">
@@ -118,34 +118,426 @@
           <h3 class="hny-title">Accommodation Registration</h3>
         </div>
 
-        <div class="form-41-mian section-gap mt-5">
+         <div class="form-41-mian section-gap mt-5">
           <div class="container">
-            <div class="d-grid align-form-map">
+            <div class=" align-form-map">
               <div class="form-inner-cont">
-                <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
-                  <div class="form-input">
-                    <label for="w3lName">Name</label>
-                    <input type="text" name="w3lName" id="w3lName" placeholder="" />
+                <form id="signInForm" class="signin-form" name="google-sheet">
+
+                  <div class="row">
+
+                    <!-- Title -->
+                    <div class="col-md-6">
+                      <select name="Title"  name="Title" id="inputState" class="form-control">
+                        <option selected>Title</option>
+                        <option>Prof</option>
+                        <option>Dr</option>
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Miss</option>
+                      </select>
+                    </div>
+
+                    <!-- First Name -->
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="First Name" name="First Name">
+                    </div>
+
+                    <!-- Family Name -->
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Family Name" name="Family Name">
+                    </div>
+
+                    <!-- Given Name(s) -->
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Given Name(s)" name="Given Name(s)">
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="col-md-6">
+                      <select name="Gender" id="inputState" class="form-control">
+                        <option selected>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Company" name="Company">
+                    </div>
+
+                    <!-- Address -->
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Address" name="Address">
+                    </div>
+
+                    <!-- City -->
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="City" name="City">
+                    </div>
+
+                    <!-- ZIP Code -->
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="ZIP Code" name="ZIP Code">
+                    </div>
+
+                    <!-- Country -->
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Country" name="Country">
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Phone" name="Phone">
+                    </div>
+
+                    <!-- Fax -->
+                    <div class="col-md-6">
+                      <input 
+                        type="text" 
+                        id="emailText" 
+                        name="Fax"
+                        placeholder="Fax" 
+                        required="" />
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-6">
+                      <input 
+                        type="text" 
+                        id="nameText" 
+                        name="Email"
+                        placeholder="Email" />
+                    </div>
+
+                    <!-- Presentation Topic -->
+                    <div class="col-md-6">
+                      <select name="Presentation Topic" id="inputState" class="form-control">
+                        <option selected>Presentation Topic</option>
+                        <option>Nanotechnology and Materials Science</option>
+                        <option>Catalysis and Polymer Science</option>
+                        <option>Photocatalysis and Photoelectrochemical cells</option>
+                        <option>Dye-Sensitized and Pervoskite solar cells</option>
+                        <option> Chemical Education</option>
+                        <option>Geochemistry and Mineral Chemistry</option>
+                        <option>Green and Environmental Chemistry</option>
+                        <option> Medicinal & Pharmaceutical Chemistry</option>
+                        <option>Organic & Bio-Chemistry and Natural Products</option>
+                        <option>Inorganic Chemistry and Analytical Chemistry</option>
+                        <option>Physical and Theoretical Chemistry</option>
+                        <option>Environmental Chemistry and Renewable Energy</option>
+                        <option>Industrial Chemistry and Petroleum Chemistry</option>
+                        <option>Food and Agricultural Chemistry</option>
+                      </select>
+                    </div>
+
+                    <!-- Type Of Presentation -->
+                    <div class="col-md-6">
+                      <select name="Type Of Presentation" id="inputState" class="form-control">
+                        <option selected>Type Of Presentation</option>
+                        <option>Oral Presentation</option>
+                        <option>Poster Presentation</option>
+                        <option>Accompanying Person</option>
+                        <option>Attending</option>
+                      </select>
+                    </div>
+
+                    <!-- Accommodation -->
+                    <div class="col-md-6">
+                      <select name="Accommodation" id="inputState" class="form-control">
+                        <option selected>Accommodation</option>
+                        <option>Not Included</option>
+                        <option>Included</option>
+                        <option>Double Room</option>
+                        <option>Single Room</option>
+                      </select>
+                    </div>
+                  
+                    
                   </div>
-                  <div class="form-input">
-                    <label for="w3lSender">Email(Required)*</label>
-                    <input type="email" name="w3lSender" id="w3lSender" placeholder="" required="" />
-                  </div>
-                  <div class="form-input">
-                    <label for="w3lMessage">Message(Required)*</label>
-                    <textarea placeholder="" name="w3lMessage" id="w3lMessage" required=""></textarea>
-                  </div>
-                  <div class="form-submit text-right">
-                      <button type="submit" class="btn btn-style btn-primary">Submit Message</button>
+                  
+                  
+                  <div class="form-submit text-center mt-5">
+                      <button id="submitButton" type="submit" class="btn btn-style btn-primary">Register</button>
                     </div>
                 </form>
               </div>
             </div>
           </div>
+        </div> 
+        
+        <!-- <div class="container register">
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="register-heading">Connect Google Spreadsheet to HTML</h3>
+                            <div class="row register-form">
+                                <div class="col-md-12">
+                                    <form method="post" autocomplete="off" name="google-sheet">
+                                        <div class="form-group">
+                                            <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" name="Phone" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Login" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div> -->
+    
+      </section>
+    <!--//Registeration Form-->
+
+    <!-- Registration Paid Info -->
+    <section class="w3l-team">
+      <div class="team py-5">
+
+        <div class="container py-md-5 py-3">
+          <div class="header-section text-center mx-auto">
+            <h6 class="sub-titlehny">Registration Fees</h6>
+            <h3 class="hny-title">Paid Way</h3>
+            <p class="my-3"> 
+              The registration fee should be paid in one of the following ways:
+            </p>
+          </div>
+        </div>
+
+
+        <div class="container mb-5">
+          <!-- Navs -->
+          <ul class="nav nav-pills nav-justified nav-tabs" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-one" role="tab" aria-controls="pills-home" aria-selected="true">
+                For Non-Egyptian applicant
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-two" role="tab" aria-controls="pills-profile" aria-selected="false">
+                For the Egyptian applicant
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-three" role="tab" aria-controls="pills-profile" aria-selected="false">
+                By bank draft or check
+              </a>
+            </li>
+          </ul>
+
+          <!-- Content -->
+          <div class="tab-content mb-5" id="pills-tabContent">
+
+            <!-- For Non-Egyptian applicant -->
+            <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-home-tab">
+              <table class="table text-left">
+                <tbody >
+                  <tr>
+                    <td>Name of the Bank :</td>
+                    <td>The United Bank</td>
+                  </tr>
+                  <tr>
+                    <td>Swift bank code :</td>
+                    <td>UBOEEGCXXXX </td>
+                  </tr>
+
+                  <tr>
+                    <td>Beneficiary Account No :</td>
+                    <td>066 - 624483 - 202</td>
+                  </tr>
+                  <tr>
+                    <td>Full address :</td>
+                    <td>22 El Gamohria St., Sohag - Egypt	</td>
+                  </tr>
+
+                  <tr>
+                    <td>Beneficiary Cust Name :	</td>
+                    <td>International Society of Applied Chemistry and Community Developments</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+
+            <!-- For the Egyptian applicant -->
+            <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <table class="table text-left">
+                <tbody >
+                  <tr>
+                    <td>Name of the Bank :</td>
+                    <td>المصرف المتحد - فرع سوهاج	</td>
+                  </tr>
+                  <tr>
+                    <td>Swift bank code :</td>
+                    <td>UBOEEGCXXXX </td>
+                  </tr>
+
+                  <tr>
+                    <td>Beneficiary Account No :</td>
+                    <td>0066 / 624483 / 201  </td>
+                  </tr>
+                  <tr>
+                    <td>Full address :</td>
+                    <td>22 El Gamohria St., Sohag - Egypt	</td>
+                  </tr>
+
+                  <tr>
+                    <td>Beneficiary Cust Name :	</td>
+                    <td>الجمعية الدولية للكيمياء التطبيقية وتنمية المجتمع	</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+
+            <!-- By bank draft or check -->
+            <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <div class="mt-4 text-center">
+                    <h3>For the benefit of:</h3>
+                    <p>
+                      Chemistry Department, Faculty of Science, Sohag University, Sohag-82524, Egypt.
+                    </p>
+                    <p>
+                      Please write your name and 
+                      <b>
+                        "International Society of Applied Chemistry and Community Development (ISAC-CD)"
+                      </b>
+                       on your bankd raft.
+                    </p>
+                    <p>
+                      If payment is being made by an institution,please make sure that the participant's name is indicated.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- Registration Fees -->
+    <section class="w3l-bottom py-5">
+      <div class="container py-md-4 py-3 text-center">
+        <div class="header-section text-center mx-auto">
+          <h3 class="hny-title">
+            Registration Fees
+          </h3>
+          <p class="my-3 px-lg-5">
+            Those who wish to attend the conference should fill out the enclosed registration form with their Abstract, to one of the following registration.
+          </p>
+        </div>
+
+        <div class="mt-5 mb-5">
+          <!-- Navs -->
+          <ul class="nav nav-pills nav-justified nav-tabs" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                For Egyptian participants (L.E.)
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                For non-Egyptian participants ($)
+              </a>
+            </li>
+          </ul>
+
+          <!-- Content -->
+          <div class="tab-content" id="pills-tabContent">
+
+            <!-- For Egyptian participants (L.E.) -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <table class="table text-left">
+                <thead>
+                  <tr>
+                    <th scope="col">Data</th>
+                    <th scope="col">Till 1/3/2021</th>
+                    <th scope="col">After 31/3/2021</th>
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr>
+                    <td>Registration & accommodation 1</td>
+                    <td>2000</td>
+                    <td>2100</td>
+                  </tr>
+                  <tr>
+                    <td>Accompanying person</td>
+                    <td>1800</td>
+                    <td>1900</td>
+                  </tr>
+                  <tr>
+                    <td>Registration Only 2</td>
+                    <td>500</td>
+                    <td>600</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- For non-Egyptian participants ($) -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <table class="table text-left">
+                <thead>
+                  <tr>
+                    <th scope="col">Data</th>
+                    <th scope="col">Till 1/3/2021</th>
+                    <th scope="col">After 31/3/2021</th>
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr>
+                    <td>Registration & accommodation 1</td>
+                    <td>500</td>
+                    <td>550</td>
+                  </tr>
+                  <tr>
+                    <td>Registration & accommodation for students 3</td>
+                    <td>350</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>Accompanying person with accommodation</td>
+                    <td>250</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Registration Only 2 </td>
+                    <td>150</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>RegistrationOnlyforstudents3 </td>
+                    <td>100</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <td>Accompanying person without accommodation</td>
+                    <td>50</td>
+                    <td>100</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
         </div>
         
+
+        
+      </div>
     </section>
-    <!--//contact-->
+
 
     <!-- Footer -->
     <section class="w3l-footer-29-main">
@@ -344,6 +736,22 @@
     <!--//MENU-JS-->
 
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/register.js"></script>
+
+    <!-- <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzo7628RaIO6Gj6qObu6EGrh5rPAkwSoyNB1hcWKCNX1uPnbVUc6FKK/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('tessst Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
   </body>
 
