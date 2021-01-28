@@ -85,3 +85,12 @@
 .speakers .column-btm {
   height: auto !important;
 }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coming-soon img {
+  height: 150px;
+}
